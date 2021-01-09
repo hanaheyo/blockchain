@@ -1,0 +1,11 @@
+// typeScript가 JavaScript로 변환하는 규칙, 옵션 설정
+{
+    "compilerOptions": {
+        "module": "commonjs", // nodeJS사용, import, export
+        "target":"ES2015", // compile하고 싶은 자바스크립트 버전 설정
+        "sourceMap":true // sourceMap 설정
+    },
+    // 어떤 파일들이 컴파일 과정에 포함될지를 typeScript에게 알려주는 것
+    "include": ["index.ts"], // 컴파일 과정에 포함될 파일의 배열
+    "exclude": ["node_modules"] // 이렇게 디폴트를 설정해놓는 것이 좋아!
+}
